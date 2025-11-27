@@ -3,9 +3,9 @@
 
 # Except these folders (whitelist)
 !Document/
-!lab.*/
+!lab*/
 !Desktop/
-!class_activity.*/
+!class_activity*/
 
 # Ignore hidden files everywhere
 .*
