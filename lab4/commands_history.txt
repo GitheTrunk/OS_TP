@@ -1,0 +1,50 @@
+  481  git push -u origin master
+  482  git push -f
+  483  git push --set-upstream origin master -f
+  484  git push -f
+  485  git push --set-upstream origin master -f
+  486  git status
+  487  ls
+  488  nano .gitignore
+  489  git add .
+  490  git commit -m "add class activities"
+  491  nano .gitignore
+  492  git add .
+  493  git status
+  494  git commit -m "update .gitignore"
+  495  git add -f .gitignore
+  496  git status
+  497  git commit -m "Update .gitignore"
+  498  git push
+  499  git commit -m "Update .gitignore"
+  500  git push
+  501  git status
+  502  git add class_activity1/ class_activity2/ class_activity3/
+  503  nano .gitignore
+  504  git add .
+  505  git commit -m "add class activities"
+  506  git push -u origin master
+  507  git remote -v
+  508  git add -f class_activity1/ class_activity2/ class_activity3/ Desktop/ Document/ lab1/ lab2/ lab3/
+  509  git add -f class_activity1/ class_activity2/ class_activity3/ Desktops/
+  510  git commit -m "Add class activity folders and lab folders"
+  511  ls 
+  512  nano .gitignore
+  513  git add -f class_activity1/ class_activity2/ class_activity3/ Desktops/
+  514  git commit -m "add new folder"
+  515  git add .gitignore
+  516  git commit -m "add new folder"
+  517  git push -u origin master
+  518  ls
+  519  mkdir lab4
+  520  touch contents.txt
+  521  sort contents.txt >> contents-sorted.txt
+  522  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  523  mkdir -p ~/lab4/Documents
+  524  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  525  wc -w < content.txt >> ~/lab4/filed2.txt
+  526  wc -w < contents.txt >> ~/lab4/filed2.txt
+  527  head -n 5 /etc/passwd | sort -r
+  528  tail -n 9 contents.txt | wc -m 
+  529  find /usr/share -name test
+  530  history | tail -n 50 > ~/lab4/commands_history.txt
