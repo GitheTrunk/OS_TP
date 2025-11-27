@@ -1,0 +1,406 @@
+    1  cd 
+    2  ls
+    3  lsb_release -a
+    4  mkdir lab1
+    5  ls
+    6  cd lab1
+    7  touch file1
+    8  ls
+    9  root 
+   10  whoami
+   11  tree
+   12  pwd
+   13  history
+   14  clear
+   15  echo $HISTSIZE
+   16  cd lab1/
+   17  mkdir LabFiles
+   18  cd LabFiles/L
+   19  cd lab1/
+   20  cd LabFiles/
+   21  touch doc1.txt doc2.txt
+   22  whoami
+   23  pwd
+   24  man history
+   25  history | tail -n 5
+   26  history > lab1/commands_history.txt
+   27  ls
+   28  tree
+   29  whereis
+   30  ls
+   31  ~/lab1/
+   32  ~/lab1
+   33  cd lab1
+   34  ls
+   35  ls -a
+   36  cd ..
+   37  mkdir lab2
+   38  cd lab2
+   39  mkdir ex1 ex2
+   40  ls 
+   41  cd ex1
+   42  mkdir network system udev
+   43  ls
+   44  cd network/
+   45  touch interfaces
+   46  cd ..
+   47  ls
+   48  cd system/
+   49  cd ..
+   50  tree system/
+   51  rm system/
+   52  rm -r system/
+   53  tree lab2
+   54  ls
+   55  cd ../
+   56  ls
+   57  cd ex1
+   58  ls
+   59  mkdir sytemd
+   60  cd sytemd/
+   61  mkdir sytem user
+   62  cd system
+   63  ls
+   64  rm -r sytem/ 
+   65  mkdir system
+   66  cd ..
+   67  ls
+   68  cd systemd
+   69  rm -r sytemd/
+   70  ls
+   71  mkdir systemd
+   72  cd systemd/
+   73  ls
+   74  mkdir system user
+   75  cd system/
+   76  touch system.conf
+   77  cd ..
+   78  cd user/
+   79  touch user.conf
+   80  cd ..
+   81  touch interfaces
+   82  cd ..
+   83  tree ex1
+   84  ls
+   85  rm -r ex1
+   86  cd 
+   87  ls
+   88  cd lab2/
+   89  ls
+   90  rm -f ex1/
+   91  tree lab2
+   92  rm -rf ex1
+   93  ls
+   94  mkdir ex1
+   95  cd ex1
+   96  mkdir etc home
+   97  ls -l
+   98  cd etc/
+   99  mkdir network systemd udev
+  100  cd network/
+  101  touch interfaces
+  102  cd ..
+  103  cd systemd/
+  104  mkdir system user
+  105  cd system/
+  106  touch system.conf
+  107  cd ..
+  108  cd user/
+  109  touch user.conf
+  110  cd ..
+  111  ls
+  112  touch resolved.conf
+  113  cd etc/
+  114  cd ..
+  115  ls
+  116  cd udev/
+  117  mkdir rules.d
+  118  touch udec.conf
+  119  ls
+  120  cd ..
+  121  cd .
+  122  cd ../
+  123  ls
+  124  touch ex1_command_history.txt
+  125  cd home/
+  126  mkdir lost+found user
+  127  ls
+  128  cd user
+  129  mkdir Documents
+  130  cd ..
+  131  touch result.txt
+  132  ls
+  133  cd ../
+  134  cd ex2/
+  135  touch ex2_command_history.txt
+  136  cd ..
+  137  tree lab2
+  138  cd ../
+  139  tree lab2
+  140  cd lab2/
+  141  cd ex1/etc/
+  142  ls
+  143  rm -rf systemd/
+  144  ls
+  145  mkdir systemd 
+  146  cd systemd/
+  147  mkdir system user
+  148  touch resolved.conf system.conf user.conf
+  149  cd ../
+  150  cd ..
+  151  history > lab2/ex1/ex1_command_history.txt
+  152  ls
+  153  mkdir new 
+  154  cd 
+  155  mkdir Deskop Document
+  156  cd Desktop
+  157  cd Deskop/
+  158  mkdir TPOS
+  159  cd ..
+  160  cd new
+  161  ls 
+  162  cd     
+  163  ls
+  164  rm -r new
+  165  ls
+  166  cd Deskop/
+  167  cd ..
+  168  cd Document/
+  169  mkdir TP01
+  170  cd TP01/
+  171  touch file.txt
+  172  ~#
+  173  cd ~
+  174  ls
+  175  tree
+  176  cd /home/gic-bun-sengleang/Deskop/TPOS/
+  177  cd ../../Document/
+  178  echo "I am Sengleang" > Document/TP01/file.txt
+  179  tree
+  180  cd ~
+  181  tree
+  182  echo "I am Sengleang" > Document/TP01/file.txt
+  183  cat Document/TP01/file.txt
+  184  history > lab2/ex2/ex2_command_history.txt
+  185  cat lab2/ex2/ex2_command_history.txt
+  186  whoami
+  187  ls
+  188  tree
+  189  ls Deskop/
+  190  cd Deskop/TPOS
+  191  ls
+  192  cd ..
+  193  mv Deskop Desktops
+  194  cd ..
+  195  mv Deskop Desktops
+  196  ls
+  197  ls *.txt
+  198  *.txt
+  199  ls *.txt
+  200  cd lab2/
+  201  ls *.txt
+  202  ls -l ex1/
+  203  cd ex1/
+  204  ls 
+  205  ls *.txt
+  206  cd ~
+  207  mkdir lab3
+  208  cd lab3
+  209  touch copied.txt 
+  210  ls
+  211  cp copied.txt /Document
+  212  sudo cp copied.txt /Document
+  213  ls
+  214  cp copied.txt /home/gic-bun-sengleang/Document
+  215  cd ~/Document/
+  216  ls
+  217  touch {one, two, tree,four, five}.txt
+  218  ls
+  219  rm five}.txt tree,four two, {one,
+  220  tree
+  221  rm -r tree,four,
+  222  ls
+  223  touch {one,two,three,four,five}.txt
+  224  ls
+  225  cp {one,two,three,four,five}.txt ./lab3
+  226  cd ..
+  227  ls
+  228  cp {one,two,three,four,five}.txt .lab3
+  229  cd lab3/
+  230  ls
+  231  mkdir CopyingFolder
+  232  cd Document/
+  233  cd ..
+  234  cd Document/
+  235  ls
+  236  cp *.txt CopyingFolder
+  237  cp *.txt ~/CopyingFolder
+  238  cp *.txt ./CopyingFolder
+  239  cp *.txt CopyingFolder/
+  240  cp *.txt ./CopyingFolder/
+  241  cp *.txt ../CopyingFolder/
+  242  cd ~/
+  243  ls
+  244  cd lab3/
+  245  ls
+  246  cd ~/
+  247  cd Document/
+  248  cp *.txt ../CopyingFolder/
+  249  cd lab3/
+  250  cd ~/lab3/
+  251  tree
+  252  mkdir CopyingFolder
+  253  ls
+  254  cd ~/Document/
+  255  cd ./lab3/
+  256  cd lab3/
+  257  cd ./lab3
+  258  cd ~/lab3/
+  259  mkdir Documents
+  260  touch {one,two,three,four,five}.txt
+  261  ls
+  262  cp *.txt CopyingFolder/
+  263  ls
+  264  ls CopyingFolder/
+  265  cd Documents/
+  266  touch {one,two,three,four,five}_document.txt
+  267  ls
+  268  nano *.txt 
+  269  cat *.txt
+  270  rm {one,two,three,four,five}_document.txt document_{un,deux,trois,quatre,cinque}.txt
+  271  mv {one,two,three,four,five}_document.txt document_{un,deux,trois,quatre,cinque}.txt
+  272  ls
+  273  touch {one,two,three,four,five}_document.txt
+  274  mv {one,two,three,four,five}_document.txt document_{un,deux,trois,quatre,cinque}.txt
+  275  ls
+  276  nano *.txt 
+  277  cat *.txt
+  278  mv one_document.txt document_un.txt
+  279  mv two_document.txt document_deux.txt
+  280  mv three_document.txt document_trois.txt
+  281  mv five_document.txt document_cinque.txt
+  282  mv four_document.txt document_quatre.txt
+  283  ls
+  284  mv *.txt /lab3
+  285  mv *.txt ~/lab3
+  286  ls ~/lab3
+  287  cd ..
+  288  mkdir MoveFolder
+  289  mv document_{un,deux,trois,quatre,cinque}.txt MoveFolder/
+  290  ls MoveFolder
+  291  ls
+  292  cd ~/Desktops/
+  293  mkdir FrenchFolder
+  294  *from MoveFolder FrenchFolder/
+  295  mv MoveFolder FrenchFolder/
+  296  ls
+  297  cd ~/lab3/MoveFolder/
+  298  ls
+  299  cd ..
+  300  mv MoveFolder FrenchFolder/
+  301  ls
+  302  cd FrenchFolder/
+  303  ls
+  304  ~/lab3
+  305  cd ..
+  306  tree
+  307  touch tree_structure_before_remove.txt
+  308  tree > tree_structure_before_remove.txt
+  309  cat tree_structure_before_remove.txt
+  310  mkdir Desktop
+  311  mv FrenchFolder/ Desktop/
+  312  tree 
+  313  tree > tree_structure_before_remove.txt
+  314  cd 
+  315  rm ./lab3/Desktop/FrenchFolder/document_deux.txt
+  316  cd ./lab3/Documents/
+  317  mkdir EmptyFolder
+  318  cd EmptyFolder/
+  319  touch deletefile.txt
+  320  mkdir DeleteFolder
+  321  cd ..
+  322  ls
+  323  cd ..
+  324  ls
+  325  cd lab3/
+  326  ls
+  327  cd Documents/
+  328  ls
+  329  cd EmptyFolder/
+  330  nano
+  331  cd ..
+  332  mkdir wildcard_lab
+  333  cd wildcard_lab
+  334  touch a.txt b.txt ab.txt abc.txt xyz.log data.csv 
+  335  ls
+  336  ls *.txt
+  337  ls *.log
+  338  ls *.csv
+  339  ls [1]*.txt
+  340  ls a*.txt
+  341  ls ?*.txt
+  342  ls ?.txt
+  343  cd ..
+  344  mkdir backup 
+  345  cp lab3/?.txt backup/
+  346  cp lab3/a.txt backup/
+  347  cp wildcard_lab/?.txt backup/
+  348  ls backup/
+  349  cp wildcard_lab/ab.txt backup/
+  350  cp wildcard_lab/abc.txt backup/
+  351  cp wildcard_lab/xyz.log backup/
+  352  cp wildcard_lab/data.csv backup/
+  353  ls backup/
+  354  ls 
+  355  rm wildcard_lab/
+  356  rm -r wildcard_lab/
+  357  ls
+  358  mkdir wildcard_lab
+  359  touch a.txt b.txt ab.txt abc.txt xyz.log data.csv 
+  360  rm ?.txt wildcard_lab/
+  361  rm -r ?.txt wildcard_lab/
+  362  ls
+  363  mkdir wildcard_lab
+  364  ls
+  365  rm {a,b,ab,abc}.txt
+  366  ls   
+  367  rm xyz.log
+  368  rm data.csv
+  369  cd wildcard_lab/
+  370  touch a.txt b.txt ab.txt abc.txt xyz.log data.csv 
+  371  cd ..
+  372  rm ?.txt wildcard_lab/
+  373  rm -r ?.txt wildcard_lab/
+  374  ls
+  375  mkdir wildcard_lab
+  376  touch a.txt b.txt ab.txt abc.txt xyz.log data.csv 
+  377  cd wildcard_lab/
+  378  rm ?.txt 
+  379  ls
+  380  touch a.txt b.txt ab.txt abc.txt xyz.log data.csv 
+  381  ls
+  382  rm ?.*
+  383  ls 
+  384  cd ../backup/
+  385  ls
+  386  rm *.txt 
+  387  rm *.log
+  388  rm *.csv
+  389  ls
+  390  cd ..
+  391  mkdir advanced_wildcards
+  392  cd advanced_wildcards
+  393  touch file{1..3}.txt
+  394  ls
+  395  ls [123]file.txt
+  396  ls file[1-3].txt
+  397  history > lab2/wildcardx3_command_history.txt
+  398  history > ~/lab2/wildcardx3_command_history.txt
+  399  cat ~/lab2/wildcardx3_command_history.txt
+  400  cd ..
+  401  mkdir logs
+  402  cd logs
+  403  touch log202301{01..05}.txt
+  404  ls log202301*.txt
+  405  ls log*[13579].txt
+  406  history > ~/lab3/wildcardex3_command_history.txt

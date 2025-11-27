@@ -1,0 +1,26 @@
+    1  cd 
+    2  ls
+    3  lsb_release -a
+    4  mkdir lab1
+    5  ls
+    6  cd lab1
+    7  touch file1
+    8  ls
+    9  root 
+   10  whoami
+   11  tree
+   12  pwd
+   13  history
+   14  clear
+   15  echo $HISTSIZE
+   16  cd lab1/
+   17  mkdir LabFiles
+   18  cd LabFiles/L
+   19  cd lab1/
+   20  cd LabFiles/
+   21  touch doc1.txt doc2.txt
+   22  whoami
+   23  pwd
+   24  man history
+   25  history | tail -n 5
+   26  history > lab1/commands_history.txt

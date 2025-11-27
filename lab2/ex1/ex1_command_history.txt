@@ -1,0 +1,151 @@
+    1  cd 
+    2  ls
+    3  lsb_release -a
+    4  mkdir lab1
+    5  ls
+    6  cd lab1
+    7  touch file1
+    8  ls
+    9  root 
+   10  whoami
+   11  tree
+   12  pwd
+   13  history
+   14  clear
+   15  echo $HISTSIZE
+   16  cd lab1/
+   17  mkdir LabFiles
+   18  cd LabFiles/L
+   19  cd lab1/
+   20  cd LabFiles/
+   21  touch doc1.txt doc2.txt
+   22  whoami
+   23  pwd
+   24  man history
+   25  history | tail -n 5
+   26  history > lab1/commands_history.txt
+   27  ls
+   28  tree
+   29  whereis
+   30  ls
+   31  ~/lab1/
+   32  ~/lab1
+   33  cd lab1
+   34  ls
+   35  ls -a
+   36  cd ..
+   37  mkdir lab2
+   38  cd lab2
+   39  mkdir ex1 ex2
+   40  ls 
+   41  cd ex1
+   42  mkdir network system udev
+   43  ls
+   44  cd network/
+   45  touch interfaces
+   46  cd ..
+   47  ls
+   48  cd system/
+   49  cd ..
+   50  tree system/
+   51  rm system/
+   52  rm -r system/
+   53  tree lab2
+   54  ls
+   55  cd ../
+   56  ls
+   57  cd ex1
+   58  ls
+   59  mkdir sytemd
+   60  cd sytemd/
+   61  mkdir sytem user
+   62  cd system
+   63  ls
+   64  rm -r sytem/ 
+   65  mkdir system
+   66  cd ..
+   67  ls
+   68  cd systemd
+   69  rm -r sytemd/
+   70  ls
+   71  mkdir systemd
+   72  cd systemd/
+   73  ls
+   74  mkdir system user
+   75  cd system/
+   76  touch system.conf
+   77  cd ..
+   78  cd user/
+   79  touch user.conf
+   80  cd ..
+   81  touch interfaces
+   82  cd ..
+   83  tree ex1
+   84  ls
+   85  rm -r ex1
+   86  cd 
+   87  ls
+   88  cd lab2/
+   89  ls
+   90  rm -f ex1/
+   91  tree lab2
+   92  rm -rf ex1
+   93  ls
+   94  mkdir ex1
+   95  cd ex1
+   96  mkdir etc home
+   97  ls -l
+   98  cd etc/
+   99  mkdir network systemd udev
+  100  cd network/
+  101  touch interfaces
+  102  cd ..
+  103  cd systemd/
+  104  mkdir system user
+  105  cd system/
+  106  touch system.conf
+  107  cd ..
+  108  cd user/
+  109  touch user.conf
+  110  cd ..
+  111  ls
+  112  touch resolved.conf
+  113  cd etc/
+  114  cd ..
+  115  ls
+  116  cd udev/
+  117  mkdir rules.d
+  118  touch udec.conf
+  119  ls
+  120  cd ..
+  121  cd .
+  122  cd ../
+  123  ls
+  124  touch ex1_command_history.txt
+  125  cd home/
+  126  mkdir lost+found user
+  127  ls
+  128  cd user
+  129  mkdir Documents
+  130  cd ..
+  131  touch result.txt
+  132  ls
+  133  cd ../
+  134  cd ex2/
+  135  touch ex2_command_history.txt
+  136  cd ..
+  137  tree lab2
+  138  cd ../
+  139  tree lab2
+  140  cd lab2/
+  141  cd ex1/etc/
+  142  ls
+  143  rm -rf systemd/
+  144  ls
+  145  mkdir systemd 
+  146  cd systemd/
+  147  mkdir system user
+  148  touch resolved.conf system.conf user.conf
+  149  cd ../
+  150  cd ..
+  151  history > lab2/ex1/ex1_command_history.txt
