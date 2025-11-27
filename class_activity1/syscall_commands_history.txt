@@ -1,0 +1,16 @@
+  846* clang --version
+  847* xcode-select --install\n
+  848* cd class_activity1
+  849* ls
+  850* nano syscall1.c
+  851  ./syscall1.c
+  852  nano syscall1.c
+  853  gcc syscall1.c -o syscall1.c
+  854  ./syscall1.c
+  855  clear
+  856  ./syscall1.c
+  857  nano copyfilesyscall.c
+  858  gcc copyfilesyscall.c -o copyfilesyscall
+  859  echo "System call copy test" > result.txt
+  860  ./copyfilesyscall
+  861  cat result.txt
