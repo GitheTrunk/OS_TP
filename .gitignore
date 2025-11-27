@@ -1,0 +1,11 @@
+# Ignore everything in HOME
+/*
+
+# Except these folders (whitelist)
+!Document/
+!lab.*/
+!Desktop/
+!class_activity.*/
+
+# Ignore hidden files everywhere
+.*
