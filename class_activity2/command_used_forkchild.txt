@@ -1,0 +1,15 @@
+ 1028  close
+ 1029  sudo close
+ 1030  cd /mnt/d/year4/kanha/SE/REAN/backend
+ 1031  mvn spring-boot:run
+ 1032  ls
+ 1033  cd class-activity1
+ 1034  ls
+ 1035  cd .
+ 1036  cd ..
+ 1037  mkdir class-activity2
+ 1038  cd class-activity2
+ 1039  nano forkchild.c
+ 1040  gcc -o forkchild forkchild.c
+ 1041  ./forkchild > result_forkchild.txt
+ 1042  history | tail -n 15 > command_used_forkchild.txt
