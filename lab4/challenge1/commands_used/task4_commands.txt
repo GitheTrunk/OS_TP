@@ -1,0 +1,20 @@
+  587  cd challenge1/
+  588  grep -Ei "bot|scan|exploit|curl|wget" original_log/access.log > ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  589  grep -E "/wp-admin|/admin|/\.git" original_log/access.log > ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  590  grep -Ei "bot|scan|exploit|curl|wget" original_log/access.log >> ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  591  cat ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  592  grep "\?cmd=" original_log/access.log >> ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  593  grep " 404 " original_log/access.log | grep -E "/wp-admin|/admin|/\.git|\?cmd=" >> ~/lab4/challenge1/analysis/task3_suspicious_agent.txt 
+  594  history | tail -n 20 > commands_used/task3_commands.txt
+  595  cat commands_used/task3_commands.txt
+  596  cd original_log/
+  597  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -n 5 > ~/lab4/challenge1/analysis/task4_top_ips.txt
+  598  echo -e "\nMost targeted URLs:" >> ~/lab4/challenge1/analysis/task4_top_ips.txt
+  599  awk -F\" '{print $2}' access.log | awk '{print $2}' | sort | uniq -c | sort -nr | head -n 10 >> ~/lab4/challenge1/analysis/task4_top_ips.txt
+  600  echo -e "\nRequests by hour:" >>  ~/lab4/challenge1/analysis/task4_top_ips.txt
+  601  grep -oP "\[\d+\/\w+\/\d+:\K\d{2}" access.log | sort | uniq -c | sort -nr >> ~/lab4/challenge1/analysis/task4_top_ips.txt
+  602  echo -e "\nIPs exceeding 10 requests per minute:" >> ~/lab4/challenge1/analysis/task4_top_ips.txt
+  603  awk '{print $1" "$4}' access.log | sed 's/\[//g' | cut -d: -f1-3 | sort | uniq -c | awk '$1 > 10' ~/lab4/challenge1/analysis/task4_top_ips.txt
+  604  car ~/lab4/challenge1/analysis/task4_top_ips.txt
+  605  cat ~/lab4/challenge1/analysis/task4_top_ips.txt
+  606  history | tail -n 20 > ~/lab4/challenge1/commands_used/task4_commands.txt

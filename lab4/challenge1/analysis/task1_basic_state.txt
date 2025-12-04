@@ -1,0 +1,50 @@
+  498  git push -u origin master
+  499  git pull
+  500  ls
+  501  cd lab4/
+  502  ls
+  503  cd Documents/
+  504  ls
+  505  cd ..
+  506  mkdir challenge1
+  507  mkdir original_log analysis commands_used
+  508  ls
+  509  rm original_log/ commands_used/ original_log/
+  510  rm -r original_log commands_used
+  511  ls
+  512  rm -r analysis/
+  513  cd cha
+  514  cd challenge1
+  515  mkdir original_log analysis commands_used
+  516  ls
+  517  cd original_log/
+  518  ls -1 | wc -l
+  519  nano access.log
+  520  cat access.log
+  521  ls -1 | wc -l
+  522  cat *.log | wc -l
+  523  head -n 5 access.log
+  524  tail -n 5 access.log
+  525  echo "Log inspection for original_log:" > ~/lab4/challenge1/analysis/task1_basic_state.txt
+  526  echo "Number of log files: $(ls -1 | wc -l)" > ~/lab4/challenge1/analysis/task1_basic_state.txt
+  527  echo "Total log entries: $(cat *.log | wc -l)" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  528  echo "First 5 entries:" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  529  head -n 5 access.log >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  530  echo "Last 5 entries:" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  531  tail -n 5 access.log >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  532  cat ~/lab4/challeng1/analysis/task1_basic_state.txt
+  533  cd 
+  534  cd ~/lab4/challenge1/analysis/   
+  535  ls
+  536  cat task1_basic_state.txt
+  537  cd ./
+  538  cd 
+  539  cd lab4/
+  540  cd challenge1/
+  541  cd original_log/
+  542  echo "Total log entries: $(cat *.log | wc -l)" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  543  echo "First 5 entries:" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  544  head -n 5 access.log >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  545  echo "Last 5 entries:" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  546  tail -n 5 access.log >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  547  history | tail -n 50 > ~/lab4/challenge1/analysis/task1_basic_state.txt

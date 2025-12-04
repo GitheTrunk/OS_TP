@@ -1,0 +1,50 @@
+  532  cat ~/lab4/challeng1/analysis/task1_basic_state.txt
+  533  cd 
+  534  cd ~/lab4/challenge1/analysis/   
+  535  ls
+  536  cat task1_basic_state.txt
+  537  cd ./
+  538  cd 
+  539  cd lab4/
+  540  cd challenge1/
+  541  cd original_log/
+  542  echo "Total log entries: $(cat *.log | wc -l)" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  543  echo "First 5 entries:" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  544  head -n 5 access.log >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  545  echo "Last 5 entries:" >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  546  tail -n 5 access.log >> ~/lab4/challeng1/analysis/task1_basic_state.txt
+  547  history | tail -n 50 > ~/lab4/challenge1/analysis/task1_basic_state.txt
+  548  cd 
+  549  ls
+  550  cd lab4/
+  551  cd challenge1/
+  552  ls
+  553  cd analysis/
+  554  ls
+  555  cat task1_basic_state.txt
+  556  cd ..
+  557  grep -E "401|403" access.log > ~/lab4/challenge1/analysis/task2_failed_logins.txt  
+  558  cd original_log/
+  559  grep -E "401|403" access.log > ~/lab4/challenge1/analysis/task2_failed_logins.txt  
+  560  cat ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  561  awk '{print $1}' ~/lab4/challenge1/analysis/task2_failed_logins.txt | sort | uniq -c | sort -nr >>  ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  562  cat  ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  563  grep -E "POST /login" access.log | grep -E " 401 | 403 "
+  564  grep "python-requests" access.log | grep -E " 401 | 403 "
+  565  grep -E "POST /login" access.log | grep -E " 401 | 403 " >> ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  566  grep "python-requests" access.log | grep -E " 401 | 403 " >> ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  567  cat ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  568  awk '{print $1}' ~/lab4/challenge1/analysis/task2_failed_logins.txt | sort | uniq -c | sort -nr >>  ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  569  cat  ~/lab4/challenge1/analysis/task2_failed_logins.txt
+  570  cd ..
+  571  cd
+  572  tree challenge1
+  573  ls -l challenge1
+  574  ls -l lab4
+  575  cd challenge1
+  576  cd lab4/
+  577  ls
+  578  tree challenge1
+  579  cd challenge1
+  580  history | tail -n 50 > ~/lab4/challenge1/commands_used/task1_commands.txt
+  581  history | tail -n 50 > ~/lab4/challenge1/commands_used/task2_commands.txt

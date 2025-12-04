@@ -1,0 +1,20 @@
+  575  cd challenge1
+  576  cd lab4/
+  577  ls
+  578  tree challenge1
+  579  cd challenge1
+  580  history | tail -n 50 > ~/lab4/challenge1/commands_used/task1_commands.txt
+  581  history | tail -n 50 > ~/lab4/challenge1/commands_used/task2_commands.txt
+  582  tree challenge1
+  583  cd 
+  584  tree challenge1
+  585  cd lab4
+  586  tree challenge1
+  587  cd challenge1/
+  588  grep -Ei "bot|scan|exploit|curl|wget" original_log/access.log > ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  589  grep -E "/wp-admin|/admin|/\.git" original_log/access.log > ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  590  grep -Ei "bot|scan|exploit|curl|wget" original_log/access.log >> ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  591  cat ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  592  grep "\?cmd=" original_log/access.log >> ~/lab4/challenge1/analysis/task3_suspicious_agent.txt
+  593  grep " 404 " original_log/access.log | grep -E "/wp-admin|/admin|/\.git|\?cmd=" >> ~/lab4/challenge1/analysis/task3_suspicious_agent.txt 
+  594  history | tail -n 20 > commands_used/task3_commands.txt
