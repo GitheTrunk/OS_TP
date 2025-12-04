@@ -1,0 +1,5 @@
+  519  cut -d ":" -f 4 employees.txt
+  520  cut -d "," -f 4 employees.txt
+  521  cut -d "," -f 4 employees.txt | cut -d ":" -f 2
+  522  cut -d "," -f 4 employees.txt | cut -d ":" -f 2 > results/task2_all_emails.txt
+  523  history | tail -n 5 > commands/task2_commands.txt

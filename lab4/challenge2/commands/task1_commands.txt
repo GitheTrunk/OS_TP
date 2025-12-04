@@ -1,0 +1,10 @@
+  508  mkdir data results commands
+  509  ls
+  510  nano employees.txt
+  511  cat employees.txt
+  512  grep "department:IT" employees.txt
+  513  grep "department:HR" employees.txt > results/task1_IT_staff.txt
+  514  history | tail -n 10 commands/task1_commands.txt
+  515  ls
+  516  history | tail -n 10 commands/task1_commands.txt
+  517  history | tail -n 10 > commands/task1_commands.txt
