@@ -1,0 +1,30 @@
+  259  ls
+  260  cd Documents/
+  261  ls
+  262  cd OS_TP/
+  263  ls 
+  264  git status
+  265  echo "Hello, World!"
+  266  cd 
+  267  echo "Hello, World!"
+  268  sh Hello, World!
+  269  ./test.sh
+  270  nano hello_ubuntu.sh
+  271  chmod +x ./hello_ubuntu.sh
+  272  .hello_ubuntu
+  273  nano hello_ubuntu.sh
+  274  cat hello_ubuntu.sh 
+  275  chmod +x hello_ubuntu.sh 
+  276  chmod 755 hello_ubuntu.sh 
+  277  ./hello_ubuntu.sh 
+  278  /usr/local/bin/
+  279  sudo mv hello_ubuntu.sh /usr/local/bin/hello_ubuntu
+  280  sudo chmod +x /usr/local/bin/hello_ubuntu 
+  281  hello_ubuntu
+  282  nano hello_there
+  283  chmod +x hello_there 
+  284  sudo mv hello_there /usr/local/bin/
+  285  hello_there
+  286  nano ~/.bashrc
+  287  source ~/.bashrc
+  288  history | tail -n 30 > cli_lab7.txt
