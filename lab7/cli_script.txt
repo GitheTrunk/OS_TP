@@ -1,0 +1,140 @@
+  1. Simple variable printing script
+
+  340  nano eonea
+  341  chmod +x eonea
+  342  cat nano eonea
+  343  ./eonea
+  344  nano eoneb
+  345  chmod +x eoneb
+  346  ./eonea && ./eoneb
+ 
+2.Arithmetic script
+
+  351  nano etwoa
+  352  nano etwob
+  353  nano etwoc
+  354  nano etwod
+  355  ./etwoa
+  356  ./etwob
+  357  ./etwoc
+  358  ./etwod
+  359  chmod +x etwoa
+  360  chmod +x etwob
+  361  chmod +x etwoc
+  362  chmod +x etwod
+  363  ./etwoa
+  364  ./etwob
+  365  ./etwoc
+  366  ./etwod
+
+3. Script 
+
+  367  history | tail -n 20 >> ~/Documents/OS_TP/lab7/cli_script.txt
+  372  ./mycal "4+2"
+  373  ./mycal "7/8"
+  374  ./mycal "3*7"
+  375  history | tail -n 4 >> ~/Documents/OS_TP/lab7/cli_script.txt 
+
+sengleang@sengleang:~$ ./mycal "2-4"
+./mycal "4+2"
+./mycal "7/8"
+./mycal "3*7"
+Result of 2-4 is: -2
+Result of 4+2 is: 6
+Result of 7/8 is: .87500000000000000000
+Result of 3*7 is: 21
+
+4. Script to check file type
+
+```
+#!/bin/bash
+
+read -p "Enter file or directory name: " file
+
+if [ -f "$file" ]; then
+    echo "$file is a regular file."
+elif [ -d "$file" ]; then
+    echo "$file is a directory."
+else
+    echo "$file is another type of file."
+fi
+```
+		
+  378  chmod +x checktype.sh 
+  379  touch test_file.txt && ./checktype.sh 
+  380  rm test_file.txt 
+  381  ls
+
+sengleang@sengleang:~$ touch test_file.txt && ./checktype.sh 
+Enter file or directory name: test_file.txt
+test_file.txt is a regular file.
+
+5. Modify script 
+
+```
+#!/bin/bash
+
+file="$1"
+
+if [ -f "$file" ]; then
+    echo "$file is a regular file."
+elif [ -d "$file" ]; then
+    echo "$file is a directory."
+else
+    echo "$file is another type of file."
+fi
+```
+
+sengleang@sengleang:~$ nano checktype.sh 
+sengleang@sengleang:~$ ./checktype.sh ~/Documents/OS_TP/lab7/cli_script.txt
+/home/sengleang/Documents/OS_TP/lab7/cli_script.txt is a regular file.
+
+6. Script Compare numbers
+
+```
+#!/bin/bash
+
+num1=$1
+num2=$2
+
+if [ "$num1" -gt "$num2" ]; then
+    echo "$num1 is greater than $num2"
+elif [ "$num1" -lt "$num2" ]; then
+    echo "$num1 is smaller than $num2"
+else
+    echo "$num1 is equal to $num2"
+fi
+```
+
+  387  nano compare_two_num
+  388  mv compare_two_num compare_two_num.sh
+  389  chmod +x compare_two_num.sh 
+  390  ./compare_two_num.sh 10 7
+  sengleang@sengleang:~$ ./compare_two_num.sh 10 7
+  10 is greater than 7
+
+7. Permission check
+
+```
+#!/bin/bash
+
+file_path="$1"
+
+if [ -e "$file_path" ]; then
+    echo "$file_path passwords are enabled."
+    if [ -w "$file_path" ]; then
+        echo "You have permissions to edit $file_path."
+    else
+        echo "You do NOT have permissions to edit $file_path."
+    fi
+else
+    echo "$file_path does not exist."
+fi
+``` 
+  393  nano permission_check.sh
+  394  chmod +x permission_check.sh 
+  395  ./permission_check.sh ~/Documents/OS_TP/lab7
+
+sengleang@sengleang:~$ ./permission_check.sh ~/Documents/OS_TP/lab7
+/home/sengleang/Documents/OS_TP/lab7 passwords are enabled.
+You have permissions to edit /home/sengleang/Documents/OS_TP/lab7.
